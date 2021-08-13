@@ -17,6 +17,7 @@ body {
   background-color: var(--Pale-blue);
   font-family: "Red Hat Display";
   background-repeat: no-repeat;
+  color: var(--Dark-blue);
   background-size: cover;
   box-sizing: border-box;
   padding: 0;
@@ -24,105 +25,119 @@ body {
 }
 
 .card-container {
-  background-color: #ffff;
   transform: translate(-50%, -50%);
   grid-template-rows: auto 66%;
   border-radius: 20px;
   position: absolute;
   height: 75vh;
-  width: 24.5%;
+  width: 23%;
   left: 50%;
   top: 50%;
+  box-shadow: 0px 9px 10px var(--Desaturated-blue);
 }
 
-#hero-sec {
+#hero-el {
   background-image: url("/images/illustration-hero.svg");
-  border-radius: 20px 20px 0 0;
+  border-radius: 20px;
   background-size: cover;
+  box-shadow: 0px 7px 10px var(--Desaturated-blue);
 }
 
-.info-sec {
-  grid-template-rows: 45% auto;
-}
-
-.info-text {
-  color: var(--Dark-blue);
+/* Card Information */
+.info-con {
+  grid-template-rows: 40% auto;
   text-align: center;
 }
 
-h1 {
-  font-size: 25px;
+.text-sec h1 {
+  font-size: 22px;
   font-weight: 900;
-  margin-top: 30px;
+  margin-top: 35px;
 }
-
-p {
-  margin-left: 50px;
-  margin-right: 50px;
+.text-sec p {
+  margin: 0px 30px 0 40px;
+  line-height: 23px;
+  opacity: 57%;
+  font-size: 14px;
+  width: 80%;
   font-weight: 700;
-  opacity: 0.6;
-  font-size: 15px;
-  line-height: 20px;
 }
 
-.info-pricing {
-  grid-template-rows: auto 70%;
-  position: relative;
+.pricing-sec {
+  grid-template-rows: 40% auto;
 }
 
-.price-con {
-  /* background-color: red; */
-  width: 70%;
-  margin: 0;
-  transform: translatex(22%);
+.price-rate-el {
+  background-color: var(--Very-pale-blue);
+  width: 80%;
+  transform: translatex(12%);
   display: flex;
   align-items: center;
-}
-
-.price-con a {
-  color: black;
+  border-radius: 20px;
 }
 
 #icon-music {
-  height: 72%;
-  width: 18%;
-  border-radius: 100%;
   background-image: url("/images/icon-music.svg");
   background-repeat: none;
   background-size: cover;
+  height: 45%;
+  width: 14.5%;
+  margin-left: 12px;
 }
 
-.price-rate {
-  background-color: green;
-  height: 100%;
-  width: 50%;
+.payment-rate {
+  margin-left: 12px;
+}
+.price-rate-el h3 {
+  margin: 0;
+  font-weight: 900;
+  margin-left: 12px;
+  font-size: 15px;
+}
+.price-rate-el p {
+  margin: 0;
+  padding: 0;
+  line-height: 20px;
+  margin-left: px;
+  font-size: 12px;
 }
 
-.button-con {
-  margin-top: 15px;
+.cta-change {
+  transform: translatex(60px);
+}
+
+.cta-change a {
+  float: right;
+  font-size: 13px;
+  font-weight: 700;
 }
 
 button {
   background-color: var(--Bright-blue);
-  transform: translateX(12.5%);
   border-radius: 6px;
   border-style: none;
   font-weight: 700;
   color: #ffff;
   padding: 10px;
   outline: none;
-  height: 35%;
-  width: 80%;
+  height: 29%;
+  width: 75%;
+  transform: translateY(32px);
+  cursor: pointer;
+  box-shadow: 0px 9px 10px var(--Desaturated-blue);
 }
-.cancel {
+
+.cta-cancel {
+  font-weight: 900;
+  font-size: 13px;
+  color: var(--Dark-blue);
   position: relative;
   text-align: center;
   transform: translatey(100%);
+  transform: translateY(52px);
 }
-a {
-  text-decoration: none;
+.cta-cancel a {
   color: var(--Dark-blue);
-  font-weight: 900;
-  font-size: 15px;
-  opacity: 0.5;
+  opacity: 57%;
+  text-decoration: none;
 }
