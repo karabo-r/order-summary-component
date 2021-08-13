@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+:root {
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+}
+
+.grid {
+  display: grid;
+}
+
+body {
+  background-image: url("/images/pattern-background-desktop.svg");
+  background-color: var(--Pale-blue);
+  font-family: "Red Hat Display";
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.card-container {
+  background-color: #ffff;
+  transform: translate(-50%, -50%);
+  grid-template-rows: auto 66%;
+  border-radius: 20px;
+  position: absolute;
+  height: 75vh;
+  width: 24.5%;
+  left: 50%;
+  top: 50%;
+}
+
+#hero-sec {
+  background-image: url("/images/illustration-hero.svg");
+  border-radius: 20px 20px 0 0;
+  background-size: cover;
+}
+
+.info-sec {
+  grid-template-rows: 45% auto;
+}
+
+.info-text {
+  color: var(--Dark-blue);
+  text-align: center;
+}
+
+h1 {
+  font-size: 25px;
+  font-weight: 900;
+  margin-top: 30px;
+}
+
+p {
+  margin-left: 50px;
+  margin-right: 50px;
+  font-weight: 700;
+  opacity: 0.6;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.info-pricing {
+  grid-template-rows: auto 70%;
+  position: relative;
+}
+
+.price-con {
+  /* background-color: red; */
+  width: 70%;
+  margin: 0;
+  transform: translatex(22%);
+  display: flex;
+  align-items: center;
+}
+
+.price-con a {
+  color: black;
+}
+
+#icon-music {
+  height: 72%;
+  width: 18%;
+  border-radius: 100%;
+  background-image: url("/images/icon-music.svg");
+  background-repeat: none;
+  background-size: cover;
+}
+
+.price-rate {
+  background-color: green;
+  height: 100%;
+  width: 50%;
+}
+
+.button-con {
+  margin-top: 15px;
+}
+
+button {
+  background-color: var(--Bright-blue);
+  transform: translateX(12.5%);
+  border-radius: 6px;
+  border-style: none;
+  font-weight: 700;
+  color: #ffff;
+  padding: 10px;
+  outline: none;
+  height: 35%;
+  width: 80%;
+}
+.cancel {
+  position: relative;
+  text-align: center;
+  transform: translatey(100%);
+}
+a {
+  text-decoration: none;
+  color: var(--Dark-blue);
+  font-weight: 900;
+  font-size: 15px;
+  opacity: 0.5;
+}
