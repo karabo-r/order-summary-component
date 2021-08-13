@@ -37,7 +37,7 @@ body {
 }
 
 #hero-el {
-  background-image: url("/images/illustration-hero.svg");
+  background-image: url("./images/illustration-hero.svg");
   border-radius: 20px;
   background-size: cover;
   box-shadow: 0px 7px 10px var(--Desaturated-blue);
