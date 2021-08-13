@@ -77,7 +77,7 @@ body {
 }
 
 #icon-music {
-  background-image: url("/images/icon-music.svg");
+  background-image: url("./images/icon-music.svg");
   background-repeat: none;
   background-size: cover;
   height: 45%;
